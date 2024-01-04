@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div>
+<h2>Descubra se é maior ou menor</h2>
+
+<label>Digite o seu valor</label><br>
+<input type="text" id="v1" class="v1"size="10"><br>
+
+<label>Digite o valor de comparação</label><br>
+<input type="text" id="v2" class="v2" size="10"><br>
+<button onclick="calc()"> Verificar </button>
+<p id="exi"></p>
+</div>
+<script>
+
+function calc(){
+var val1 = parseInt(document.getElementById('v1').value);
+var val2 = parseInt(document.getElementById('v2').value);
+
+if(val1 > val2){
+document.getElementById('exi').innerHTML = "Seu numero é maior";
+}else if(val1 == val2){
+document.getElementById('exi').innerHTML = "Valores Iguais";
+}
+
+else{
+document.getElementById('exi').innerHTML = "Seu numero é menor";
+}
+
+
+
+}
+</script>
+</body>
+</html>
